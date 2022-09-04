@@ -1,8 +1,8 @@
-import {Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails} from '../pages';
+import { Homepage, News, Cryptocurrencies, CryptoDetails} from '../pages';
 
 const router = [
     {
-        path: 'home',
+        path: '/',
         component: <Homepage/>
     },
     {
@@ -10,15 +10,11 @@ const router = [
         component: <News/>
     },
     {
-        path: 'exchanges',
-        component: <Exchanges/>
-    },
-    {
         path: 'cryptocurrencies',
         component: <Cryptocurrencies/>
     },
     {
-        path: 'cryptocurrencies/:cryptoId',
+        path: 'crypto/:coinId',
         component: <CryptoDetails/>
     }
 ]
